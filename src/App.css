@@ -1,0 +1,19 @@
+@import url();
+.container {
+  width: 300px;
+  margin: auto;
+
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form-button button,
+.form-field input{
+  display: block;
+  width: 100%;
+  margin: 1rem 0
+}
+ul {
+  list-style-type: none;
+}
