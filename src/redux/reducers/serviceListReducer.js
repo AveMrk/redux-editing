@@ -3,9 +3,10 @@ import {REMOVE_SERVICE} from '../actions/actionTypes';
 import { v4 as uuid } from 'uuid';
 
 const defaultState = [
-    {id: uuid(), name: 'Замена стекла', price: 21000},
-    {id: uuid(), name: 'Замена стекла', price: 21000},
-    {id: uuid(), name: 'Замена стекла', price: 21000}
+    {id: uuid(), name: 'Замена дисплея', price: 2500},
+    {id: uuid(), name: 'Замена стекла', price: 2100},
+    {id: uuid(), name: 'Замена аккумулятора', price: 4000},
+    {id: uuid(), name: 'Замена микрофона', price: 2500}
   ]
 
 export default function serviceListReducer(state = defaultState, action) {
