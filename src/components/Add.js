@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import {changeServiceField, addService, clearService, removeService} from '../redux/actions/actionCreators'
+import {changeServiceField, addService, clearService, removeService} from '../redux/actions/actionCreators';
 
 export default function Add() {
   const item = useSelector(state => state.serviceAdd);
@@ -20,7 +20,6 @@ export default function Add() {
   }
   const handleSubmitEdit = evt => {
     evt.preventDefault();
-    console.log(item)
     dispatch(removeService(item.id)); 
     dispatch(addService(item.name, item.price))
   }
